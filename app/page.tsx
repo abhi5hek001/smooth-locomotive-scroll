@@ -2,6 +2,7 @@
 
 import Description from "@/components/Description";
 import IntroPage from "@/components/Intro";
+import Projects from "@/components/Projects";
 import { useEffect } from "react";
 
 
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="flex flex-col gap-[20px]">
       <IntroPage />
       <Description />
+      <Projects />
     </main>
   );
 }

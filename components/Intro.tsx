@@ -1,8 +1,8 @@
 "use client"
 
-import Image from "next/image"
 import backgroundImg from '@/public/background.jpg'
 import introImg from '@/public/intro.jpg'
+import Image from "next/image"
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useLayoutEffect, useRef } from "react"
@@ -58,7 +58,7 @@ export default function IntroPage() {
                         className="object-cover object-top"
                     />
                 </div>
-                <h1 data-scroll data-scroll-speed="0.7" className="z-10 text-white text-6xl uppercase font-bold">Smooth Scroll</h1>
+                <h1 data-scroll data-scroll-speed="0.7" className="z-30 text-white text-6xl uppercase font-bold">Smooth Scroll</h1>
             </div>
         </div>
     )
