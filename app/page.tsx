@@ -1,5 +1,6 @@
 "use client";
 
+import Description from "@/components/Description";
 import IntroPage from "@/components/Intro";
 import { useEffect } from "react";
 
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-[20px]">
       <IntroPage />
+      <Description />
     </main>
   );
 }

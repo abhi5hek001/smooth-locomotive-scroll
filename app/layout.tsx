@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className + "m-0"}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

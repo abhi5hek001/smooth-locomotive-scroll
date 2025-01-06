@@ -26,13 +26,22 @@ export default function IntroPage() {
         })
 
         timeline
-            .from(backgroundImage.current, { clipPath: "inset(15%)" })
-            .to(introImage.current, { height: "200px" }, 0)
+        .fromTo(
+            backgroundImage.current,
+            { clipPath: "inset(15%)" },
+            { clipPath: "inset(0%)", ease: "none" }
+        )
+        .fromTo(
+            introImage.current,
+            { height: "475px" },
+            { height: "200px", ease: "none" },
+            0
+        );
     }, [])
 
     return (
         <div className="intro">
-            <div ref={backgroundImage} className="backgroundImage absolute h-[140vh] w-[100%] top-0 brightness-[60%]">
+            <div ref={backgroundImage} className="backgroundImage absolute h-[160vh] w-[100%] top-0 brightness-[60%]">
                 <Image
                     src={backgroundImg}
                     alt="Background Img"
